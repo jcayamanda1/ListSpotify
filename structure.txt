@@ -1,10 +1,10 @@
-yourproject/
+spotifylist/
 │
 ├── .env                        # Environment variables including Spotify API keys and Flask secret
 ├── app.py                      # Your Flask application initialization
 │
-├── yourproject/
-│   ├── __init__.py             # Makes yourproject a Python package
+├── spotifylist/
+│   ├── __init__.py             # Makes spotifylist a Python package
 │   │
 │   ├── config.py               # Configuration settings for your Flask app
 │   │
