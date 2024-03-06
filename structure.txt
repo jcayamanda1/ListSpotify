@@ -1,0 +1,23 @@
+yourproject/
+│
+├── .env                        # Environment variables including Spotify API keys and Flask secret
+├── app.py                      # Your Flask application initialization
+│
+├── yourproject/
+│   ├── __init__.py             # Makes yourproject a Python package
+│   │
+│   ├── config.py               # Configuration settings for your Flask app
+│   │
+│   ├── spotify/
+│   │   ├── __init__.py         # Makes spotify a Python package
+│   │   └── client.py           # Spotify API client functions
+│   │
+│   ├── music/
+│   │   ├── __init__.py         # Makes music a Python package
+│   │   └── routes.py           # Routes related to music features
+│   │
+│   └── web/
+│       ├── __init__.py         # Makes web a Python package
+│       └── routes.py           # General web routes, including authentication
+│
+└── requirements.txt            # Python dependencies
