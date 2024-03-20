@@ -1,0 +1,14 @@
+<!-- templates/genres/top_genres.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Top Genres</h1>
+<div class="genres-list">
+    <!-- Loop through genres and display them -->
+    {% for genre in genres %}
+    <div class="genre-item">
+        <h2>{{ genre.name }}</h2>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

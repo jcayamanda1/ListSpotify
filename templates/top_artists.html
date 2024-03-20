@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Artists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #1DB954;
+        }
+        ul.artist-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
+        }
+        .artist-item {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #F4F4F4;
+            border-radius: 10px;
+        }
+        .artist-item h2, .artist-item p {
+            margin: 10px 0;
+        }
+        .artist-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            background-color: #1DB954;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        a:hover {
+            background-color: #1ED760;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Top Artists</h1>
+        <ul class="artist-list">
+            {% for artist in artists %}
+            <li class="artist-item">
+                <img src="{{ artist.image_url }}" alt="{{ artist.name }}">
+                <h2>{{ artist.name }}</h2>
+                <p>Top Track: {{ artist.top_track }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

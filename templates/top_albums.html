@@ -1,0 +1,16 @@
+<!-- templates/albums/top_albums.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Top Albums</h1>
+<div class="albums-list">
+    <!-- Loop through albums and display them -->
+    {% for album in albums %}
+    <div class="album-item">
+        <img src="{{ album.cover_url }}" alt="{{ album.name }}">
+        <h2>{{ album.name }}</h2>
+        <p>By {{ album.artist }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
