@@ -1,9 +1,9 @@
-spotifylist/
+SpotifyList/
 │
 ├── .env                        # Environment variables including Spotify API keys and Flask secret
 ├── app.py                      # Your Flask application initialization
 │
-├── spotifylist/
+├── SpotifyList/
 │   ├── __init__.py             # Makes spotifylist a Python package
 │   │
 │   ├── config.py               # Configuration settings for your Flask app
@@ -15,9 +15,30 @@ spotifylist/
 │   ├── music/
 │   │   ├── __init__.py         # Makes music a Python package
 │   │   └── routes.py           # Routes related to music features
+|   |
+│   ├── artist/
+│   │   ├── __init__.py         # Makes artist a Python package
+│   │   └── routes.py           # Routes related to artist features
+|   |
+│   ├── album/
+│   │   ├── __init__.py         # Makes album a Python package
+│   │   └── routes.py           # Routes related to album features
 │   │
-│   └── web/
-│       ├── __init__.py         # Makes web a Python package
-│       └── routes.py           # General web routes, including authentication
-│
+|   |
+│   ├── genre/
+│   │   ├── __init__.py         # Makes genre a Python package
+│   │   └── routes.py           # Routes related to genre features
+│   │
+│   │
+│   ├── web/
+│   |   ├── __init__.py         # Makes web a Python package
+│   |   └── routes.py           # General web routes, including authentication
+│   │
+|   └─ templates
+│      └── home.html            # Create templates for home page
+│      ├── most_streamed.html   # Create templates for song page
+│      ├── top_artists.html   # Create templates for artist page
+│      ├── top_albums.html   # Create templates for album page
+│      └── top_genres.html   # Create templates for genre page
+|
 └── requirements.txt            # Python dependencies
